@@ -1,19 +1,17 @@
-# TEJ2O ⇢ Unit #X-YY
+```javascript
+// Variables for dimensions
+let length = 5
+let width = 3
 
-[![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue.svg)](./LICENSE)
+// Calculations
+let area = length * width
+let perimeter = 2 * (length + width)
 
+// Displaying the work and answers
+basic.showString(length + " * " + width + " = " + area)
+basic.showString("Area: " + area + " cm^2")
 
-## To lint your python code
+basic.pause(1000)
 
-Run the following command in the terminal, where your *.py file is located:
-
-```console
-black --check --diff ./*.py
-```
-## To Build *.hex for Micro:bit using MicroPython
-
-Run the following command in the terminal, where your *.py file is located:
-
-``` bash
-py2hex ./main.py
-```
+basic.showString("2 * (" + length + " + " + width + ") = " + perimeter)
+basic.showString("Perimeter: " + perimeter + " cm")
